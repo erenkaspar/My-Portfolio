@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #fff;
+
+  background-image:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(173, 216, 230, 0.8) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(255, 192, 203, 0.8) 0%,
+      transparent 40%
+    );
+
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 20px 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+.rank {
+  margin-top: 5px;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.links {
+  margin-top: 25px;
+}
+
+.link {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.links a:last-child .link {
+  margin-right: 0;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+a:hover,
+a:active {
+  opacity: 1;
+}
