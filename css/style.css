@@ -1,0 +1,495 @@
+/* ##################################
+            Header
+  ################################### */
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(17, 17, 17, 0));
+  width: 100%;
+  z-index: 50;
+  backdrop-filter: blur(1px);
+  pointer-events: none;
+}
+
+/* Navigation */
+.main-nav {
+  margin-top: 2rem;
+  border: 1px solid #fff;
+  border-radius: 9px;
+  background-color: #111;
+  z-index: 99;
+  margin-bottom: 3rem;
+  pointer-events: auto;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.6rem;
+  padding: 10px 20px;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #fdfdfd;
+  background-color: #111;
+  padding: 10px 20px;
+  border-radius: 7px;
+  letter-spacing: 1px;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #fff;
+}
+
+.main-nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00e676;
+  transition: width 0.3s;
+}
+
+.main-nav-link:hover::after {
+  width: 100%;
+}
+
+/* ##################################
+            Section Hero
+  ################################### */
+
+.section-hero {
+  padding: 4.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70rem;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.8rem;
+  position: relative;
+  z-index: 10;
+}
+.hero img {
+  width: 15rem;
+  border-radius: 50%;
+}
+
+.hero-description {
+  text-align: center;
+}
+
+.heading-primary {
+  font-size: 4.4rem;
+  border-bottom: 2px solid #00e676;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-description span {
+  font-size: 3rem;
+}
+
+.parallax-obj {
+  position: absolute;
+  z-index: 1;
+  transition: transform 0.1s ease-out;
+}
+
+.obj-1 {
+  top: 15%;
+  left: 10%;
+  width: 18rem;
+}
+
+.obj-2 {
+  bottom: 20%;
+  right: 15%;
+  width: 18rem;
+}
+
+.obj-3 {
+  top: 25%;
+  right: 30%;
+  width: 15rem;
+  filter: blur(2px);
+}
+
+.obj-4 {
+  bottom: 25%;
+  left: 30%;
+  width: 8rem;
+}
+
+/* ##################################
+            Section About
+  ################################### */
+
+.about {
+  padding: 1rem 2.8rem;
+}
+
+.about-text {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-indent: 2rem;
+  padding-top: 4rem;
+}
+
+.about-text p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.about-text strong {
+  background: linear-gradient(to right, #00e676, #1de9b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.about-code {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.code-header {
+  background-color: #2d2d2d;
+  padding: 1.2rem 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dot {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+}
+
+.dot-red {
+  background-color: #ff5f56;
+}
+
+.dot-yellow {
+  background-color: #ffbd2e;
+}
+
+.dot-green {
+  background-color: #27c93f;
+}
+
+.code-title {
+  margin-left: auto;
+  margin-right: auto;
+  color: #858585;
+  font-size: 1.4rem;
+  font-family: monospace;
+  letter-spacing: 1px;
+
+  justify-self: center;
+}
+
+.code-content {
+  padding: 3.2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.6rem;
+  color: #d4d4d4;
+  line-height: 1.6;
+}
+
+.code-key {
+  color: #9cdcfe;
+}
+
+.code-string {
+  color: #ce9178;
+}
+
+/* ##################################
+            Section Skills
+  ################################### */
+
+.skills {
+  padding: 0 2.8rem;
+}
+
+.skill {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #1e1e1e;
+  box-shadow: 0 1.8rem 3.6rem rgba(0, 0, 0, 0.1);
+  padding: 3rem 6rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+
+.skill:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 1.8rem 3.6rem rgba(0, 0, 0, 0.15);
+}
+
+.skill-heading {
+  width: fit-content;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.skill-description {
+  font-size: 1.7rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-bottom: 3rem;
+  line-height: 1.3;
+}
+
+.skill-point-outline {
+  width: 100%;
+  height: 10px;
+  border: 1px solid #fff;
+  margin-top: auto;
+  display: grid;
+  border-radius: 5px;
+  overflow-x: hidden;
+}
+
+.spo-grid-html {
+  grid-template-columns: 95fr 5fr;
+}
+
+.spb-html {
+  background-color: #00e676;
+}
+
+.spo-grid-css {
+  grid-template-columns: 85fr 15fr;
+}
+
+.spb-css {
+  background-color: #82e676;
+}
+
+.spo-grid-js {
+  grid-template-columns: 1fr 9fr;
+}
+.spb-js {
+  background-color: #e6b476;
+}
+
+/* ##################################
+            Section Skills
+  ################################### */
+
+.projects {
+  padding: 0 2.8rem;
+}
+
+.project {
+  background-color: #1e1e1e;
+  padding: 3rem 4rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5rem;
+}
+
+.project:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+.project-heading {
+  font-weight: 400;
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+
+.project-text {
+  font-weight: 300;
+  font-size: 1.7rem;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+.project-links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.project-link:link,
+.project-link:visited {
+  display: flex;
+  align-content: center;
+  transition: all 0.2s;
+}
+
+.project-link:hover,
+.project-link:active {
+  color: #80f3bb;
+}
+
+.link-text {
+  margin-left: 1rem;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  align-self: center;
+}
+
+.project-img img {
+  width: 100%;
+  display: block;
+  transition: all 0.4s;
+}
+
+.project-img img:hover {
+  transform: scale(1.1);
+}
+
+/* ##################################
+            Section Contact
+   ################################## */
+
+.terminal-container {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.terminal-header {
+  background-color: #252525;
+  padding: 1.2rem 1.6rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 0.8rem;
+  z-index: 1;
+}
+
+.dot {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+}
+
+.red {
+  background: #ff5f56;
+}
+.yellow {
+  background: #ffbd2e;
+}
+.green {
+  background: #27c93f;
+}
+
+.terminal-title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+  font-family: monospace;
+}
+
+.terminal-body {
+  padding: 2.4rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #fdfdfd;
+}
+
+.terminal-line {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.user {
+  color: #00e676;
+  font-weight: bold;
+}
+.command {
+  color: #fff;
+}
+
+.terminal-output-text {
+  color: #82e676;
+  margin: 0.5rem 0 1.5rem 2.5rem;
+}
+
+.terminal-link-item {
+  margin-left: 2.5rem;
+  list-style: none;
+}
+
+.terminal-link-item a {
+  color: #5bc0de;
+  text-decoration: none;
+}
+
+.terminal-link-item a:hover {
+  text-decoration: underline;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.8rem;
+  background-color: #00e676;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

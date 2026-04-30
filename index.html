@@ -3,91 +3,275 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css?v=1.0" />
-    <link rel="icon" type="image/png" href="img/icon.png" />
-    <title>Eren Kaspar | Frontend DEV</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+
+    <script defer src="js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Eren Kaspar | Frontend Developer</title>
   </head>
   <body>
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#about" class="main-nav-link">About</a></li>
+          <li><a href="#skills" class="main-nav-link">Skills</a></li>
+          <li><a href="#projects" class="main-nav-link">Projects</a></li>
+          <li><a href="#contact" class="main-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
-      <section class="profile-side">
-        <div class="header-info">
-          <img
-            src="img/Eren-Kaspar.jpeg"
-            alt="Eren Kaspar"
-            width="236"
-            height="236"
-          />
-          <div class="title-group">
-            <h1>Eren Kaspar</h1>
-            <p>Frontend Developer</p>
+      <section class="section-hero">
+        <img
+          src="img/3d-icons/battery.png"
+          class="parallax-obj obj-1"
+          data-speed="0.15"
+          alt="3D battery"
+        />
+        <img
+          src="img/3d-icons/computer.png"
+          class="parallax-obj obj-2"
+          data-speed="-0.1"
+          alt="3D Computer"
+        />
+        <img
+          src="img/3d-icons/hash.png"
+          class="parallax-obj obj-3"
+          data-speed="0.08"
+          alt="3D Big Hash"
+        />
+        <img
+          src="img/3d-icons/hash.png"
+          class="parallax-obj obj-4"
+          data-speed="0.08"
+          alt="3D Hash"
+        />
+
+        <div class="hero">
+          <img src="img/eren-kaspar.jpeg" alt="Eren Kaspar Photo" />
+          <div class="hero-description">
+            <h1 class="heading-primary">Eren Kaspar</h1>
+            <span>Frontend Developer</span>
           </div>
         </div>
-        <div class="about">
-          <h2>About</h2>
-          <p>
-            I am a Computer Programming student focusing on frontend
-            development.
-          </p>
+      </section>
+
+      <section class="section section-about" id="about">
+        <div class="container">
+          <h2 class="heading-secondary">About</h2>
         </div>
-        <div class="links">
-          <h2>Links</h2>
-          <ul>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/eren-kaspar-67932822a/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Linkedin</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://github.com/erenkaspar"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Github</a
-              >
-            </li>
-            <li>
-              <a href="mailto:erenkaspar@gmail.com">Email</a>
-            </li>
-          </ul>
+        <div class="container">
+          <div class="about grid grid--2-cols">
+            <div class="about-text">
+              <p>
+                Hi, I am <strong class="about-text-name">Eren Kaspar</strong>. I
+                am a <strong>Frontend Developer</strong> passionate about modern
+                web technologies. My goal is to become a respected developer. I
+                love writing clean code and designing user-friendly, interactive
+                interfaces.
+              </p>
+              <p>
+                When I close VS Code and take a break from coding, you’re likely
+                to find me modding, playing story-driven games, or watching
+                anime.
+              </p>
+            </div>
+            <div class="about-code">
+              <div class="code-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="code-title">eren.json</span>
+              </div>
+              <pre class="code-content"><code>{
+  <span class="code-key">"name"</span>: <span class="code-string">"Eren Kaspar"</span>,
+  <span class="code-key">"role"</span>: <span class="code-string">"Frontend Developer"</span>,
+  <span class="code-key">"status"</span>: <span class="code-string">"Currently seeking an internship.</span>,
+  <span class="code-key">"goal"</span>: <span class="code-string">"Turning dreams into reality"</span>,
+  <span class="code-key">"hobies"</span>: [
+    <span class="code-string">"Modding"</span>,
+    <span class="code-string">"Video Games"</span>,
+    <span class="code-string">"Anime"</span>
+  ]
+}</code></pre>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="skills-side">
-        <h2>Skills</h2>
 
-        <div class="skills-container">
-          <article>
-            <img src="img/html.png" alt="HTML Logo" width="512" height="512" />
-            <div class="class-content">
-              <h3>HTML</h3>
-              <p>Strong Foundation</p>
+      <section class="section section-skills" id="skills">
+        <div class="container">
+          <h2 class="heading-secondary">Skills</h2>
+        </div>
+        <div class="container">
+          <div class="skills grid grid--3-cols">
+            <div class="skill">
+              <h3 class="skill-heading">HTML</h3>
+              <p class="skill-description">
+                Semantic structure and clean code architecture in compliance
+                with standards.
+              </p>
+              <div class="skill-point-outline spo-grid-html">
+                <div class="skill-point-box spb-html"></div>
+                <div class="skill-point-empty-box"></div>
+              </div>
             </div>
-          </article>
-
-          <article>
-            <img src="img/css.png" alt="CSS Logo" width="800" height="800" />
-            <div class="class-content">
-              <h3>CSS</h3>
-              <p>Solid Background</p>
+            <div class="skill">
+              <h3 class="skill-heading">CSS</h3>
+              <p class="skill-description">
+                Stylish interfaces optimized with modern techniques.
+              </p>
+              <div class="skill-point-outline spo-grid-css">
+                <div class="skill-point-box spb-css"></div>
+                <div class="skill-point-empty-box"></div>
+              </div>
             </div>
-          </article>
-
-          <article>
-            <img
-              src="img/js.png"
-              alt="Javascript Logo"
-              width="960"
-              height="960"
-            />
-            <div class="class-content">
-              <h3>JS</h3>
-              <p>In Progress</p>
+            <div class="skill">
+              <h3 class="skill-heading">JS</h3>
+              <p class="skill-description">
+                Fundamental steps on dynamic structures and interactive
+                solutions.
+              </p>
+              <div class="skill-point-outline spo-grid-js">
+                <div class="skill-point-box spb-js"></div>
+                <div class="skill-point-empty-box"></div>
+              </div>
             </div>
-          </article>
+          </div>
         </div>
       </section>
+
+      <section class="section section-projects" id="projects">
+        <div class="container">
+          <h2 class="heading-secondary">Projects</h2>
+        </div>
+        <div class="container">
+          <div class="projects">
+            <div class="project">
+              <div class="project-description">
+                <h3 class="project-heading">
+                  Omnifood - AI-Powered Food Subscription Service
+                </h3>
+                <p class="project-text">
+                  A user-friendly and fully responsive landing page project
+                  developed using modern web technologies. Built with the latest
+                  HTML5 and CSS3 standards (Flexbox, CSS Grid), this project
+                  aims for fluid animations, optimized visuals, and an
+                  impressive user experience. Typography, color theory, and
+                  accessibility principles have been prioritized in the design.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/erenkaspar/OmniFood"
+                    class="project-link link"
+                    target="_blank"
+                    ><ion-icon name="logo-github"></ion-icon>
+                    <span class="link-text">source code</span></a
+                  >
+                  <a
+                    href="https://erenkaspar.github.io/OmniFood/"
+                    class="project-link link"
+                    target="_blank"
+                    ><ion-icon name="globe-outline"></ion-icon>
+                    <span class="link-text">live project</span></a
+                  >
+                </div>
+              </div>
+              <figure class="project-img">
+                <img
+                  src="img/projects/omnifood.png"
+                  alt="Omnifood project preview"
+                  class=""
+                />
+              </figure>
+            </div>
+
+            <div class="project">
+              <div class="project-description">
+                <h3 class="project-heading">Personal Portfolio Website v1.0</h3>
+                <p class="project-text">
+                  A high-performance personal portfolio project developed with
+                  modern web design principles and a fully responsive
+                  architecture. Built from scratch with clean code using
+                  advanced HTML5 and CSS3 features, including Flexbox and CSS
+                  Grid. Integrated with JavaScript to provide dynamic user
+                  experiences such as parallax effects and interactive elements.
+                </p>
+                <div class="project-links">
+                  <a href="#" class="project-link link"
+                    ><ion-icon name="logo-github"></ion-icon>
+                    <span class="link-text">source code</span></a
+                  >
+                  <a href="#" class="project-link link"
+                    ><ion-icon name="globe-outline"></ion-icon>
+                    <span class="link-text">live project</span></a
+                  >
+                </div>
+              </div>
+              <figure class="project-img">
+                <img
+                  src="img/projects/my-portfolio.png"
+                  alt="My portfolio project preview"
+                  class=""
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contact" id="contact">
+        <div class="container">
+          <h2 class="heading-secondary">Contact</h2>
+        </div>
+        <div class="container">
+          <div class="contact">
+            <div class="terminal-container">
+              <div class="terminal-header">
+                <div class="terminal-buttons">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="terminal-title">bash — contact.sh</div>
+              </div>
+
+              <div class="terminal-body">
+                <div class="terminal-line">
+                  <span class="user">eren@portfolio:~$</span>
+                  <span class="command">./contact_me.sh</span>
+                </div>
+                <div id="terminal-output"></div>
+                <div class="terminal-line active-line">
+                  <span class="user">eren@portfolio:~$</span>
+                  <span class="cursor">|</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer></footer>
     </main>
   </body>
 </html>
