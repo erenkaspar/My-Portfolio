@@ -1,0 +1,14 @@
+{
+  "name": "erenkaspar.com",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Source of erenkaspar.com",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.3.5"
+  }
+}
